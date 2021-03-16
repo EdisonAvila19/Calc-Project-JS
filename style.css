@@ -1,4 +1,20 @@
+
+
+*{
+    font-family: 'Shippori Mincho B1', serif;
+}
+
 #Operation, #Result {
     text-align: right;
-    
+    background-color: transparent;
+    border: none;
 }
+
+#Operation{
+    text-decoration: dotted;
+}
+#Result {
+    font-size: x-large;
+    color: aliceblue;
+}   
+
