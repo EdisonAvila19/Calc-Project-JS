@@ -148,7 +148,7 @@ function Igual(){
                 tot = op[0] * op[2]
                 break
             case "/" : 
-                tot = op[0] / op[2]
+                tot = (op[0] / op[2]).toFixed(5)
                 break
         }
         result.value = tot
@@ -196,8 +196,12 @@ function ejecutar(id){
                     op[op.length - 1] = id
                     op.push("")
                 }
-                if(op.length === 3 && op[2] != "")
-                    op.push(id,"")
+                if(op.length === 3 && op[2] != ""){
+                    op.push(id, "")
+                }
+                if(op.length === 3 ){ //&& op[2] != ""
+                    op[1]= id
+                }
                 if(op.length === 2){
                     op[op.length - 1] = id
                     op.push("")
